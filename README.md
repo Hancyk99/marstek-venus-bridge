@@ -170,18 +170,6 @@ Any MQTT client can subscribe to the bridge:
 
 ---
 
-## 📊 Benefits
-
-| Criterion | Before (REST Polling) | After (MQTT Bridge) |
-|-----------|----------------------|----------------------|
-| **Latency (Home)** | 0-30s | <1s |
-| **Power Consumption (Client)** | High (constant HTTP) | Low (push) |
-| **Network Traffic** | 120 requests/h | ~1 MQTT subscribe |
-| **Remote Access** | ✅ Via Cloud API | ✅ Via TLS (port forward) |
-| **Offline Capability** | ❌ No | ✅ Last data cached |
-
----
-
 ## 🔧 Installation
 
 ### Prerequisites
