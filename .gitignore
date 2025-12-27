@@ -1,0 +1,40 @@
+# Configuration
+config.json
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Docker
+docker-compose.override.yml
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# MQTT data
+mosquitto/data/
+mosquitto/log/
+
+# TLS certificates and keys (user-generated, private)
+mqtt-broker/certs/
+mqtt-broker/passwordfile
+mqtt-broker/master-ca/
+
+# OS
+.DS_Store
+Thumbs.db

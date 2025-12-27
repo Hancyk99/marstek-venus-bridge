@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  # Mosquitto MQTT Broker
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    container_name: venus-mqtt-broker
+    ports:
+      - "1883:1883"  # MQTT port (unencrypted, Docker network only)
+      - "8883:8883"  # MQTT TLS port (encrypted, safe for external access)
+      - "9001:9001"  # WebSocket port (optional)
+    volumes:
+      - ./mqtt-broker/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mqtt-broker/certs:/mosquitto/config/certs
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: unless-stopped
+    networks:
+      - venus-network
+
+  # Venus Poller (Python service)
+  venus-poller:
+    build: ./venus-poller
+    container_name: venus-poller
+    volumes:
+      - ./config.json:/app/config.json:ro
+    depends_on:
+      - mosquitto
+    restart: unless-stopped
+    environment:
+      - MQTT_BROKER=mosquitto
+      - MQTT_PORT=1883
+      - LOG_LEVEL=DEBUG
+    networks:
+      - venus-network
+
+networks:
+  venus-network:
+    driver: bridge
